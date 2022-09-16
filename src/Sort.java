@@ -137,6 +137,12 @@ public class Sort {
 		assertArrayEquals(new int[] {0,3,4,5,6,7,8,9,11,12}, numsort(new int[] {0,11,12,3,4,5,6,8,7,9}));
 	}
 
-
+// testing string sort
+@Test
+public void testStringsort() {
+	
+	assertArrayEquals(new char[] {'e','h','o','l','l'}, stringsort("hello"));
+	assertArrayEquals(new char[] {'a','i','p','r','s'}, stringsort("paris"));
+}
 	
 }
