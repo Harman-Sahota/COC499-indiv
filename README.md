@@ -1,18 +1,13 @@
-## Getting Started
+# COSC499-Individual-Github-Exercise
+## Individual Github exercise for Cosc 499 / capstone project course
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+### To run both the features - 
 
-The workspace contains two folders by default, where:
+1. download <a href = "sort.java">sort.java</a> or clone the repo to your device using **"git clone"**
+2. Open <a href = "sort.java">sort.java</a> in a code editor (vs code)
+3. Run the Program 
+4. when prompted to enter a choice, enter 1 to use the integer array sort feature and 2 to use string sort feature
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+*to do - write unit tests for both features*
