@@ -28,7 +28,11 @@ public class Sort {
 		}
 		return arr;
 	}
+<<<<<<< HEAD
 public static char[] stringsort(String str) {
+=======
+	public static char[] stringsort(String str) {
+>>>>>>> 25beb77d4b9e91859ed7e4b877e843cb7c664788
 		char strarr[] = str.toCharArray();
 		char temp;
 
@@ -129,7 +133,7 @@ public static char[] stringsort(String str) {
 
 	}
 
-	
+	// testing num sort
 	@Test
 	public void testNumsort() {
 		
@@ -137,6 +141,16 @@ public static char[] stringsort(String str) {
 		assertArrayEquals(new int[] {0,3,4,5,6,7,8,9,11,12}, numsort(new int[] {0,11,12,3,4,5,6,8,7,9}));
 	}
 
+<<<<<<< HEAD
 		
+=======
+// testing string sort
+@Test
+public void testStringsort() {
+	
+	assertArrayEquals(new char[] {'e','h','o','l','l'}, stringsort("hello"));
+	
+}
+>>>>>>> 25beb77d4b9e91859ed7e4b877e843cb7c664788
 	
 }
