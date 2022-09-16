@@ -28,7 +28,23 @@ public class Sort {
 		}
 		return arr;
 	}
+public static char[] stringsort(String str) {
+		char strarr[] = str.toCharArray();
+		char temp;
 
+		for (int i = 0; i < strarr.length; i++) {
+			for (int j = i + 1; j < strarr.length; j++) {
+
+				if (strarr[j] < strarr[i]) {
+
+					temp = strarr[i];
+					strarr[i] = strarr[j];
+					strarr[j] = temp;
+				}
+			}
+		}
+		return strarr;
+	}
 	
 
 	public static void main(String[] args) {
@@ -89,7 +105,7 @@ public class Sort {
 
 				// string sort
 
-				//strarr = stringsort(str);
+				strarr = stringsort(str);
 
 				// printing the sorted array
 
