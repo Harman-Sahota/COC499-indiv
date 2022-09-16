@@ -28,7 +28,23 @@ public class Sort {
 		}
 		return arr;
 	}
+	public static char[] stringsort(String str) {
+		char strarr[] = str.toCharArray();
+		char temp;
 
+		for (int i = 0; i < strarr.length; i++) {
+			for (int j = i + 1; j < strarr.length; j++) {
+
+				if (strarr[j] < strarr[i]) {
+
+					temp = strarr[i];
+					strarr[i] = strarr[j];
+					strarr[j] = temp;
+				}
+			}
+		}
+		return strarr;
+	}
 	
 
 	public static void main(String[] args) {
@@ -121,5 +137,12 @@ public class Sort {
 		assertArrayEquals(new int[] {0,3,4,5,6,7,8,9,11,12}, numsort(new int[] {0,11,12,3,4,5,6,8,7,9}));
 	}
 
+
+	@Test
+	public void testStringsort() {
+		
+		assertArrayEquals(new char[] {'e','h','o','l','l'}, stringsort("hello"));
+		assertArrayEquals(new char[] {'a','i','p','r','s'}, stringsort("paris"));
+	}
 	
 }
