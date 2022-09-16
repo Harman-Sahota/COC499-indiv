@@ -3,8 +3,13 @@
 import java.beans.Transient;
 // sort numbers and strings
 import java.util.Scanner;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 public class Sort {
 
@@ -24,23 +29,7 @@ public class Sort {
 		return arr;
 	}
 
-	public static char[] stringsort(String str) {
-		char strarr[] = str.toCharArray();
-		char temp;
-
-		for (int i = 0; i < strarr.length; i++) {
-			for (int j = i + 1; j < strarr.length; j++) {
-
-				if (strarr[j] < strarr[i]) {
-
-					temp = strarr[i];
-					strarr[i] = strarr[j];
-					strarr[j] = temp;
-				}
-			}
-		}
-		return strarr;
-	}
+	
 
 	public static void main(String[] args) {
 
@@ -100,7 +89,7 @@ public class Sort {
 
 				// string sort
 
-				strarr = stringsort(str);
+				//strarr = stringsort(str);
 
 				// printing the sorted array
 
@@ -124,9 +113,6 @@ public class Sort {
 
 	}
 
-	@Test
-	public void testnumsort() {
-		assertEquals(new int[] { 0, 1, 2 }, numsort(new int[] { 2, 1, 0 }));
-	}
+	
 
 }
