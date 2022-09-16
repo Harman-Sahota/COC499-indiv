@@ -129,7 +129,7 @@ public class Sort {
 
 	}
 
-	
+	// testing num sort
 	@Test
 	public void testNumsort() {
 		
@@ -138,11 +138,5 @@ public class Sort {
 	}
 
 
-	@Test
-	public void testStringsort() {
-		
-		assertArrayEquals(new char[] {'e','h','o','l','l'}, stringsort("hello"));
-		assertArrayEquals(new char[] {'a','i','p','r','s'}, stringsort("paris"));
-	}
 	
 }
