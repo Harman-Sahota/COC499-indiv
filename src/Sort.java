@@ -142,7 +142,7 @@ public class Sort {
 public void testStringsort() {
 	
 	assertArrayEquals(new char[] {'e','h','o','l','l'}, stringsort("hello"));
-	assertArrayEquals(new char[] {'a','i','p','r','s'}, stringsort("paris"));
+	
 }
 	
 }
