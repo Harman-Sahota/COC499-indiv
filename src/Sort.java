@@ -141,9 +141,9 @@ public static char[] stringsort(String str) {
 		assertArrayEquals(new int[] {0,3,4,5,6,7,8,9,11,12}, numsort(new int[] {0,11,12,3,4,5,6,8,7,9}));
 	}
 
-<<<<<<< HEAD
+
 		
-=======
+
 // testing string sort
 @Test
 public void testStringsort() {
@@ -151,6 +151,6 @@ public void testStringsort() {
 	assertArrayEquals(new char[] {'e','h','o','l','l'}, stringsort("hello"));
 	
 }
->>>>>>> 25beb77d4b9e91859ed7e4b877e843cb7c664788
+
 	
 }
