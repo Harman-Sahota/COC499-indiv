@@ -28,11 +28,9 @@ public class Sort {
 		}
 		return arr;
 	}
-<<<<<<< HEAD
-public static char[] stringsort(String str) {
-=======
+
 	public static char[] stringsort(String str) {
->>>>>>> 25beb77d4b9e91859ed7e4b877e843cb7c664788
+
 		char strarr[] = str.toCharArray();
 		char temp;
 
@@ -148,7 +146,7 @@ public static char[] stringsort(String str) {
 @Test
 public void testStringsort() {
 	
-	assertArrayEquals(new char[] {'e','h','o','l','l'}, stringsort("hello"));
+	assertArrayEquals(new char[] {'e','h','l','l','o'}, stringsort("hello"));
 	
 }
 
